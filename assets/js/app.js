@@ -526,7 +526,7 @@ $(function() {
             $(".content_connected").removeClass("hide");
           }
           //console.log(currentAccount);
-          var res = await getAjaxData(config.apiUrl+"?method=getHoldingTokenList&addr="+currentAccount);
+          var res = await getAjaxData("https://xm6.io/api.php?method=getHoldingTokenList&addr="+currentAccount);
           tokenData = JSON.parse(res);
           var c = tokenData.length;
           var f = 0;
